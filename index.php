@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MAIN Dashboard</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="shortcut icon" href="https://11400.gtwoffice.com/asset/media/favicons/logo_cir.png?v=5.0.6">
+    <link rel="icon" sizes="192x192" type="image/png" href="https://11400.gtwoffice.com/asset/media/favicons/logo_cir.png?v=5.0.6">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://11400.gtwoffice.com/asset/media/favicons/apple-touch-icon-180x180.png?v=5.0.6">
+
+    <link rel="stylesheet" id="css-main" href="https://11400.gtwoffice.com/asset/css/dashmix.css?v=5.0.6">
+    <link rel="stylesheet" id="css-theme" href="https://11400.gtwoffice.com/asset/css/themes/xplay.css?v=5.0.6">
+    <link href="https://11400.gtwoffice.com/css/style.css?v=5.0.6" rel="stylesheet">
+    <link href="https://11400.gtwoffice.com/fonts/Open_Sans.css?v=5.0.6" rel="stylesheet" type="text/css">
+    <link href="https://11400.gtwoffice.com/fonts/Kanit_subset__thai_latin.css?v=5.0.6" rel="stylesheet" type="text/css">
+    <script src="https://11400.gtwoffice.com/assets/js/jquery-1.10.2.js"></script>
+
+    <link rel="stylesheet" href="https://11400.gtwoffice.com/css/styledis.css?v=5.0.6">
+    <link href="https://11400.gtwoffice.com/assets/js/sweetalert2v10.13.0/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://11400.gtwoffice.com/css/toastr.min.css">
+    <script src="https://11400.gtwoffice.com/js/jquery.min.js"></script>
+    <script src="https://11400.gtwoffice.com/js/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://11400.gtwoffice.com/js/plugins/dropdown_filter/dropdown_filter.css?v=5.0.6">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://11400.gtwoffice.com/css/stylesl.css?v=5.0.6">
+
+    <style>
+        .progress-bar { background-color: #0665d0 !important; }
+        h6 { font-size: 18px; }
+        .thead-bg { background-color: #FFEBCD; }
+        .table.table-main thead { background-color: #FFEBCD; }
+        .table.table-main thead th { border: 1px solid #000000; }
+        .table.table-main tbody td { vertical-align: middle; }
+        .table.table-main .btn-action { font-size: 14px; }
+        .header-text {
+            font-family: 'Sarabun', sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            color: #a29bfe;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .table-cont {
+            max-height: 300px;
+            overflow: auto;
+            background: #ddd;
+            margin: 20px 10px;
+            box-shadow: 0 0 1px 3px #ddd;
+        }
+        .text-pedding { padding-left: 10px; }
+        .text-font { font-size: 14px; }   
+        .text-xInspire { color: #00a680 !important; }
+        .text-primary { color: #0665d0 !important; }
+        
+        @media (min-width: 600px) {
+            .col-m-1 { flex: 0 0 auto; width: 12%; }
+            .col-m-8 { flex: 0 0 auto; width: 66.6667%; }
+            .col-m-10 { flex: 0 0 auto; width: 83.3333%; }
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main-container">
+        <div class="header-text">บริการออนไลน์สำหรับหน่วยบริการ</div>
+        <br>
+        <center>    
+        <div style="max-width:90%;">
+            <div class="row"> 
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://shnk.moph.go.th/home/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/idp.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">รพ.สิงหนคร</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://11400.gtwoffice.com/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/gtw.png" style="width: 84px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">BACK Office</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://hdc.moph.go.th/ska/public/main">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/hdc.png" style="width: 84px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">HDC</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://mrefer.skhospital.go.th/login/index.php">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/rfsk.png" style="width: 74px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">SONGKLA Refer</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://www.hatyaihospital.go.th/refer/login/index_provider.php">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/rfhy.png" style="width: 74px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">HATYAI Refer</div>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://moph-refer.inet.co.th/login">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/rfmo.png" style="width: 74px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">MOPH Refer</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://ntip-ddc.moph.go.th/UIForm/Login.aspx">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/ntip.jpg" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">NTIP</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://connect.moph.go.th/pher-plus/#/login">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/pher.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">PHER Plus</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://homeward.dms.go.th/"> 
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/amed.jpg" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark " style="font-size: 15px;">Home Ward</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://cmi.moph.go.th/"> 
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/cmi.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">CMI</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://imh.moph.go.th/img/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/imgd.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">Imaging Hub</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://bdh-service.moph.go.th/smarthosp-quest/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/smart.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">SMART HOSPITAL</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://demo-hs4.hss.moph.go.th/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/hs4.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">HS4</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://provider.id.th/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/prov.png" style="width: 84px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">Provider ID</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://moph.id.th/login">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/heal.png" style="width: 84px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 15px;">Health ID</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://mohpromtstation.moph.go.th/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/mohp.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">หมอพร้อม</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://nonhr.moph.go.th/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/nonhr.png" style="width: 84px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">NonHR</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://drug.nhso.go.th/drugcatalogue/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/drug.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">DRUG Catalogue</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://catalogue.nhso.go.th/labcatalogue/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/lab.svg" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">LAB Catalogue</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://phr1.moph.go.th/idpadmin/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/idp.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">IDP Center</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://cvp1.moph.go.th/accountcenter">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/idp.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">Account Center</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://eclaim.nhso.go.th/Client/home">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/ec1.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">New E-CLAIM</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://eclaim.nhso.go.th/webComponent/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/ec2.jpg" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">E-CLAIM</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://op.nhso.go.th/op/main/MainWebAction.do">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/oppp.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">OP / PP</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+     
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://seamlessfordmis.nhso.go.th/seamlessfordmis/faces/login.jsf">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/seam.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">Seamless</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://mishos.nhso.go.th/mis_hos/#/dashboard">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/mis.jpg" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">MIS HOS</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://audit.nhso.go.th/osrappeal/frontend/#/auth/login">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/mis.jpg" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">ระบบอุทธรณ์ (OSR)</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                        
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://singleaudit.nhso.go.th/main">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/mis.jpg" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">Single Audit</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                                
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://smt.nhso.go.th/smtf/#/home/budget/summary">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/mis.jpg" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">Smart Money Transfer</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                                                   
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="http://authenservice.nhso.go.th/authencode/">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/mis.jpg" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">New Authentication</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                                                                     
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://www.healthplatform.krungthai.com/healthPlatform/login">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/mis.jpg" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">Krungthai</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://dmis.nhso.go.th/NAPPLUS/login.jsp">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/napp.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">NAP Plus</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                                                                     
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="http://napdl.nhso.go.th/NAPWebReport/home.jsp">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/napr.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">NAP Report</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-m-1 col-xl-2">
+                    <a class="block block-link-pop text-center" href="https://deathcert.moph.go.th/deathcert/login.html">
+                        <div class="block-content block-content-full aspect-ratio-4-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="IMG/idp.png" style="width: 64px; height: 54px;" alt="icon">
+                                <div class="font-w600 mt-2 text-dark" style="font-size: 16px;">Death Cert</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+        </div>
+        </center>
+    </main>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if(x.length === 0) return; // Prevent errors if no slides
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 5000); 
+        }
+
+        window.onload = function(){
+            var tableCont = document.querySelector('#table-cont');
+            var tableCont2 = document.querySelector('#table-cont2');
+            function scrollHandle (e){
+                var scrollTop = this.scrollTop;
+                if(this.querySelector('thead')) {
+                    this.querySelector('thead').style.transform = 'translateY(' + scrollTop + 'px)';
+                }
+            }
+            if(tableCont) tableCont.addEventListener('scroll', scrollHandle);
+            if(tableCont2) tableCont2.addEventListener('scroll', scrollHandle);
+        }
+    </script>
+</body>
+</html>
